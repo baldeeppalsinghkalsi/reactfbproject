@@ -29,7 +29,9 @@ export const Auth = () => {
         }
     };
     return (
-        <div>
+        <div class="login-wrap">
+            <h2>Login</h2>
+            <div class="form">
             <input 
                 placeholder="Email..."
                 type="email"
@@ -43,6 +45,9 @@ export const Auth = () => {
             <button onClick={signIn}>Sign In</button>
             <button onClick={signInwithGoogle}>Sign In with Google</button>
             <button onClick={logout}>Log Out</button>
+            <a href="#"><p>Create Account</p></a>
+            </div>
+           
         </div>
     );
 };
